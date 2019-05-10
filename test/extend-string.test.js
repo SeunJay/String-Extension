@@ -1,0 +1,1 @@
+let string = require("../extend-string");
