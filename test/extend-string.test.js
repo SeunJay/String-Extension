@@ -14,19 +14,19 @@ describe("Extended String-methods", () => {
   it("Should capitalize a given string", () => {
     expect(demoString.toUpper()).toBe('SEUN');
   });
-  it("Should capitalize a given string", () => {
+  it("Should 'Already Capitalized' if the string is in uppercase", () => {
     expect(demoString2.toUpper()).toBe("Aready Capitalized");
   });
   it("Should convert a string to lowercase althrough", () => {
     expect(demoString.toUpper().toLower()).toBe('seun');
   });
-  it("Should convert a string to lowercase althrough", () => {
+  it("Should 'Already in lowercase' if the string is in lowercase", () => {
     expect(demoString.toLower()).toBe("Already in lowercase");
   });
   it("Should convert the first character of a string to uppercase", () => {
     expect(demoString.ucFirst()).toBe('Seun');
   });
-  it("Should convert the first character of a string to uppercase", () => {
+  it("Should 'Already capitalized' if the first character is in uppercase", () => {
     expect(demoString3.ucFirst()).toBe('Already capitalized');
   });
 })
