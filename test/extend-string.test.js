@@ -31,10 +31,13 @@ describe("Extended String-methods", () => {
   it("Should 'Already capitalized' if the first character is in uppercase", () => {
     expect(demoString3.ucFirst()).toBe('Already capitalized');
   });
-  it("Should a boolean if a string ends with a question mark", () => {
+  it("Should return a boolean if a string ends with a question mark", () => {
     expect(question.isQuestion()).toBeTruthy();
   });
-  it("Should a boolean if a string ends with a question mark", () => {
+  it("Should return a boolean if a string ends with a question mark", () => {
     expect(question1.isQuestion()).toBeFalsy();
+  });
+  it("Should return an array of words from a string", () => {
+    expect(question.words()).toEqual(['What', 'is', 'your', 'name']);
   });
 })
