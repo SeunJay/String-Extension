@@ -8,5 +8,8 @@ describe("Extended String-methods", () => {
   });
   it("Should return a false if a string contains a vowel", () => {
     expect(demoString1.hasVowels()).toBeFalsy();
+  });
+  it("Should capitalize a given string", () => {
+    expect(demoString.toUpper()).toBe('SEUN');
   })
 })
