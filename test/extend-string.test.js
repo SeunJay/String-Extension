@@ -11,5 +11,8 @@ describe("Extended String-methods", () => {
   });
   it("Should capitalize a given string", () => {
     expect(demoString.toUpper()).toBe('SEUN');
+  });
+  it("Should convert a string to lowercase althrough", () => {
+    expect(demoString.toUpper().toLower()).toBe('seun');
   })
 })
