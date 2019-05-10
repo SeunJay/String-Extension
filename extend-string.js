@@ -45,3 +45,7 @@ String.prototype.words = function() {
   let regEx = /\w+/g;
   return this.match(regEx);
 }
+
+String.prototype.wordCount = function() {
+  return this.words().length
+}
