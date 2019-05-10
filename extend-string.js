@@ -35,3 +35,8 @@ String.prototype.ucFirst = function() {
   if(/^[A-Z]/.test(this)) return 'Already capitalized'
   return this.charAt(0).toUpper() + this.slice(1)
 }
+
+String.prototype.isQuestion = function() {
+  let regEx = /\w+\?$/g;
+  return regEx.test(this)? true: false
+}

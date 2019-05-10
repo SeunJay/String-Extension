@@ -3,7 +3,8 @@ let demoString = 'seun';
 let demoString1 = 'sxn';
 let demoString2 = 'SEUN';
 let demoString3 = 'Seun';
-let question = 'What is your name?'
+let question = 'What is your name?';
+let question1 = 'is that your bag'
 
 describe("Extended String-methods", () => {
   it("Should return a true if a string contains a vowel", () => {
@@ -32,5 +33,8 @@ describe("Extended String-methods", () => {
   });
   it("Should a boolean if a string ends with a question mark", () => {
     expect(question.isQuestion()).toBeTruthy();
+  });
+  it("Should a boolean if a string ends with a question mark", () => {
+    expect(question1.isQuestion()).toBeFalsy();
   });
 })
