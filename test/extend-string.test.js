@@ -14,5 +14,8 @@ describe("Extended String-methods", () => {
   });
   it("Should convert a string to lowercase althrough", () => {
     expect(demoString.toUpper().toLower()).toBe('seun');
-  })
+  });
+  it("Should convert the first character of a string to uppercase", () => {
+    expect(demoString.ucFirst()).toBe('Seun');
+  });
 })
