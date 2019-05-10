@@ -40,4 +40,7 @@ describe("Extended String-methods", () => {
   it("Should return an array of words from a string", () => {
     expect(question.words()).toEqual(['What', 'is', 'your', 'name']);
   });
+  it("Should return the number of words in a string", () => {
+    expect(question.wordCount()).toBe(4);
+  });
 })
