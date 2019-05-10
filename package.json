@@ -1,0 +1,23 @@
+{
+  "name": "string_extension",
+  "version": "1.0.0",
+  "description": "A project aimed at extending the string class in javascript",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeunJay/String_Extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeunJay/String_Extension/issues"
+  },
+  "homepage": "https://github.com/SeunJay/String_Extension#readme"
+}
