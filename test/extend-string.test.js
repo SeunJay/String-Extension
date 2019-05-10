@@ -2,7 +2,8 @@ let string = require("../extend-string");
 let demoString = 'seun';
 let demoString1 = 'sxn';
 let demoString2 = 'SEUN';
-let demoString3 = 'Seun'
+let demoString3 = 'Seun';
+let question = 'What is your name?'
 
 describe("Extended String-methods", () => {
   it("Should return a true if a string contains a vowel", () => {
@@ -28,5 +29,8 @@ describe("Extended String-methods", () => {
   });
   it("Should 'Already capitalized' if the first character is in uppercase", () => {
     expect(demoString3.ucFirst()).toBe('Already capitalized');
+  });
+  it("Should a boolean if a string ends with a question mark", () => {
+    expect(question.isQuestion()).toBeTruthy();
   });
 })
