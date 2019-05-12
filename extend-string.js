@@ -55,3 +55,9 @@ String.prototype.toCurrency = function() {
   let regSeperator = '$&,';
   return this.replace(regEx, regSeperator)
 }
+
+String.prototype.fromCurrency = function() {
+  let regEx = /,/g;
+  let replacer = '';
+  return this.replace(regEx, replacer)
+}
