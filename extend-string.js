@@ -49,3 +49,9 @@ String.prototype.words = function() {
 String.prototype.wordCount = function() {
   return this.words().length
 }
+
+String.prototype.toCurrency = function() {
+  let regEx = /\d(?=\d{3}\.)/g;
+  let regSeperator = '$&,';
+  return this.replace(regEx, regSeperator)
+}

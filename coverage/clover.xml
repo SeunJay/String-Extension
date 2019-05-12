@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557682341836" clover="3.2.0">
-  <project timestamp="1557682341836" name="All files">
-    <metrics statements="32" coveredstatements="32" conditionals="14" coveredconditionals="14" methods="7" coveredmethods="7" elements="53" coveredelements="53" complexity="0" loc="32" ncloc="32" packages="1" files="1" classes="1"/>
+<coverage generated="1557683602839" clover="3.2.0">
+  <project timestamp="1557683602839" name="All files">
+    <metrics statements="36" coveredstatements="36" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8" elements="58" coveredelements="58" complexity="0" loc="36" ncloc="36" packages="1" files="1" classes="1"/>
     <file name="extend-string.js" path="/Users/seunjay/Desktop/String_Extension/extend-string.js">
-      <metrics statements="32" coveredstatements="32" conditionals="14" coveredconditionals="14" methods="7" coveredmethods="7"/>
+      <metrics statements="36" coveredstatements="36" conditionals="14" coveredconditionals="14" methods="8" coveredmethods="8"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
       <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -36,6 +36,10 @@
       <line num="46" count="2" type="stmt"/>
       <line num="49" count="1" type="stmt"/>
       <line num="50" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
