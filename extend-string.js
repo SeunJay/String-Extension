@@ -85,3 +85,18 @@ String.prototype.alternatingCase = function() {
   }
   return chars.join('')
 }
+
+String.prototype.numberWords = function() {
+  let result = [];
+  let regEx = /\d/g;
+  let splittedNumbers = this.split('');
+  let possibleWords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+  if(this.match(regEx)) {
+    for(index = 0; index < splittedNumbers.length; index++){
+      result.push(possibleWords[splittedNumbers[index]]);
+    }
+    return result.join(' ');
+  } else {
+    return 'No match found'
+  }
+}
