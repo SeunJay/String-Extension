@@ -62,5 +62,8 @@ describe("Extended String-methods", () => {
   it('Should return the number in words', () => {
     expect(demoString8.numberWords()).toBe("three two five");
     expect(demoString9.numberWords()).toBe("No match found")
+  });
+  it('Should return true if string is a digit(one number)', () => {
+    expect(demoString10.isDigit()).toBeTruthy()
   })
 })
