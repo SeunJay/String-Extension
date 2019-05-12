@@ -8,7 +8,9 @@ let demoString5 = '11,111.11';
 let demoString6 = 'Mr.Ben';
 let demoString7 = 'onomatopoeia';
 let demoString8 = '325';
-let demoString9 = 'tyu'
+let demoString9 = 'tyu';
+let demoString10 = '3';
+let demoString11 = '34'
 let question = 'What is your name?';
 let question1 = 'is that your bag'
 
@@ -64,6 +66,7 @@ describe("Extended String-methods", () => {
     expect(demoString9.numberWords()).toBe("No match found")
   });
   it('Should return true if string is a digit(one number)', () => {
-    expect(demoString10.isDigit()).toBeTruthy()
+    expect(demoString10.isDigit()).toBeTruthy();
+    expect(demoString11.isDigit()).toBeFalsy()
   })
 })

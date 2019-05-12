@@ -99,4 +99,9 @@ String.prototype.numberWords = function() {
   } else {
     return 'No match found'
   }
+};
+
+String.prototype.isDigit = function() {
+  let regEx = /^[\d?]$/;
+  return regEx.test(this) ? true : false
 }
