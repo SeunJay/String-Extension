@@ -21,9 +21,7 @@ String.prototype.toLower = function() {
     let characterCode = this.charCodeAt(index);
     if(characterCode >= 65 && characterCode <= 90){
       characterCode += 32
-    } else {
-      return "Already in lowercase"
-    }
+    } 
     result += String.fromCharCode(characterCode);
   }
   return result
@@ -74,4 +72,16 @@ String.prototype.inverseCase = function() {
     result += char
   }
   return result
+}
+
+String.prototype.alternatingCase = function() {
+  var chars = this.toLower().split('');
+  for(i = 0; i < chars.length; i++){
+    if(i % 2 !== 0) {
+      chars[i] = chars[i].toUpper();
+    } else {
+      chars[i] = chars[i].toLower()
+    }
+  }
+  return chars.join('')
 }
