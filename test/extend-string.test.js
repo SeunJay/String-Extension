@@ -20,7 +20,7 @@ describe("Extended String-methods", () => {
     expect(demoString.toUpper()).toBe('SEUN');
   });
   it("Should 'Already Capitalized' if the string is in uppercase", () => {
-    expect(demoString2.toUpper()).toBe("Aready Capitalized");
+    expect(demoString2.toUpper()).toBe("SEUN");
   });
   it("Should convert a string to lowercase althrough", () => {
     expect(demoString.toUpper().toLower()).toBe('seun');

@@ -9,9 +9,7 @@ String.prototype.toUpper = function() {
     let characterCode = this.charCodeAt(index);
     if(characterCode >= 97 && characterCode <= 122){
       characterCode -= 32
-    } else {
-      return "Aready Capitalized"
-    }
+    } 
     result += String.fromCharCode(characterCode);
   }
   return result
@@ -32,7 +30,7 @@ String.prototype.toLower = function() {
 };
 
 String.prototype.ucFirst = function() {
-  if(/^[A-Z]/.test(this)) return 'Already capitalized'
+  if(/[A-Z]/.test(this)) return 'Already capitalized'
   return this.charAt(0).toUpper() + this.slice(1)
 }
 
@@ -60,4 +58,20 @@ String.prototype.fromCurrency = function() {
   let regEx = /,/g;
   let replacer = '';
   return this.replace(regEx, replacer)
+}
+
+String.prototype.inverseCase = function() {
+  var result = '';
+  var i = 0;
+  while(i < this.length){
+    var char = this.charAt(i);
+    if(/[A-Z]/.test(char)){
+      char = char.toLower();
+    } else {
+      char = char.toUpper()
+    }
+    i++
+    result += char
+  }
+  return result
 }
