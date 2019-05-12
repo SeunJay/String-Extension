@@ -45,6 +45,6 @@ describe("Extended String-methods", () => {
     expect(question.wordCount()).toBe(4);
   });
   it('Should return the currency representation of the String', () => {
-    expect(demoString4.toCurrency()).toBe("11111.11")
+    expect(demoString4.toCurrency()).toBe("11,111.11")
   })
 })
