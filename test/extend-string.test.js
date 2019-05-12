@@ -3,6 +3,7 @@ let demoString = 'seun';
 let demoString1 = 'sxn';
 let demoString2 = 'SEUN';
 let demoString3 = 'Seun';
+let demoString4 = '11111.11'
 let question = 'What is your name?';
 let question1 = 'is that your bag'
 
@@ -43,4 +44,7 @@ describe("Extended String-methods", () => {
   it("Should return the number of words in a string", () => {
     expect(question.wordCount()).toBe(4);
   });
+  it('Should return the currency representation of the String', () => {
+    expect(demoString4.toCurrency()).toBe("11111.11")
+  })
 })
