@@ -3,7 +3,8 @@ let demoString = 'seun';
 let demoString1 = 'sxn';
 let demoString2 = 'SEUN';
 let demoString3 = 'Seun';
-let demoString4 = '11111.11'
+let demoString4 = '11111.11';
+let demoString5 = '11,111.11'
 let question = 'What is your name?';
 let question1 = 'is that your bag'
 
@@ -46,5 +47,8 @@ describe("Extended String-methods", () => {
   });
   it('Should return the currency representation of the String', () => {
     expect(demoString4.toCurrency()).toBe("11,111.11")
+  });
+  it('Should return a number representation of the currency String', () => {
+    expect(demoString5.fromCurrency()).toBe("11111.11")
   })
 })
