@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557685743987" clover="3.2.0">
-  <project timestamp="1557685743987" name="All files">
+<coverage generated="1557686044721" clover="3.2.0">
+  <project timestamp="1557686044721" name="All files">
     <metrics statements="56" coveredstatements="56" conditionals="18" coveredconditionals="18" methods="11" coveredmethods="11" elements="85" coveredelements="85" complexity="0" loc="56" ncloc="56" packages="1" files="1" classes="1"/>
     <file name="extend-string.js" path="/Users/seunjay/Desktop/String_Extension/extend-string.js">
       <metrics statements="56" coveredstatements="56" conditionals="18" coveredconditionals="18" methods="11" coveredmethods="11"/>
