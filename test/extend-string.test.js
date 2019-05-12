@@ -5,7 +5,8 @@ let demoString2 = 'SEUN';
 let demoString3 = 'Seun';
 let demoString4 = '11111.11';
 let demoString5 = '11,111.11';
-let demoString6 = 'Mr.Ben'
+let demoString6 = 'Mr.Ben';
+let demoString7 = 'onomatopoeia'
 let question = 'What is your name?';
 let question1 = 'is that your bag'
 
@@ -54,5 +55,8 @@ describe("Extended String-methods", () => {
   });
   it('Should return each letter of a string as an inverse of its current case', () => {
     expect(demoString6.inverseCase()).toBe("mR.bEN")
+  });
+  it('Should return each letter of a string as an inverse of its current case', () => {
+    expect(demoString7.alternatingCase()).toBe("oNoMaToPoEiA")
   })
 })
