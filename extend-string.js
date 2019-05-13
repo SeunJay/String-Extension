@@ -38,7 +38,7 @@ String.prototype.isQuestion = function() {
 }
 
 String.prototype.words = function() {
-  let regEx = /\b[\w-]+\b/g;
+  let regEx = /[\w-]+/g;
   return this.match(regEx);
 }
 
