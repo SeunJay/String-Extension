@@ -34,7 +34,7 @@ describe("Extended String-methods", () => {
     expect(vowelString.ucFirst()).toBe('Seun');
   });
   it("Should 'Already capitalized' if the first character is in uppercase", () => {
-    expect(capitalizedString.ucFirst()).toBe('Already capitalized');
+    expect(capitalizedString.ucFirst()).toBe('First character already capitalized');
   });
   it("Should return a boolean if a string ends with a question mark", () => {
     expect(question.isQuestion()).toBeTruthy();
