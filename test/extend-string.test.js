@@ -6,12 +6,12 @@ let demoString3 = 'Seun';
 let demoString4 = '11111.11';
 let demoString5 = '11,111.11';
 let demoString6 = 'Mr.Ben';
-let demoString7 = 'onomatopoeia';
+let demoString7 = 'onoma-topoeia';
 let demoString8 = '325';
 let demoString9 = 'tyu';
 let demoString10 = '3';
 let demoString11 = '34'
-let question = 'What is your name?';
+let question = 'What is yo-ur name?';
 let question1 = 'is that your bag'
 
 describe("Extended String-methods", () => {
@@ -44,7 +44,7 @@ describe("Extended String-methods", () => {
     expect(question1.isQuestion()).toBeFalsy();
   });
   it("Should return an array of words from a string", () => {
-    expect(question.words()).toEqual(['What', 'is', 'your', 'name']);
+    expect(question.words()).toEqual(['What', 'is', 'yo-ur', 'name']);
   });
   it("Should return the number of words in a string", () => {
     expect(question.wordCount()).toBe(4);
@@ -53,13 +53,13 @@ describe("Extended String-methods", () => {
     expect(demoString4.toCurrency()).toBe("11,111.11")
   });
   it('Should return a number representation of the currency String', () => {
-    expect(demoString5.fromCurrency()).toBe("11111.11")
+    expect(demoString5.fromCurrency()).toBe("111.11.11")
   });
   it('Should return each letter of a string as an inverse of its current case', () => {
     expect(demoString6.inverseCase()).toBe("mR.bEN")
   });
   it('Should return each letter of a string as an inverse of its current case', () => {
-    expect(demoString7.alternatingCase()).toBe("oNoMaToPoEiA")
+    expect(demoString7.alternatingCase()).toBe("oNoMa-ToPoEiA")
   });
   it('Should return the number in words', () => {
     expect(demoString8.numberWords()).toBe("three two five");
