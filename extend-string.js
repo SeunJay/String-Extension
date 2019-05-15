@@ -1,6 +1,6 @@
 /* Checks for vowel(s) in a string */
 String.prototype.hasVowels = function() {
-  let regEx = /[aeiou]/g; // pattern to search for vowels 
+  let regEx = /[aeiou]/ig; // pattern to search for vowels 
   return regEx.test(this)? true : false
 }
 
@@ -32,7 +32,7 @@ String.prototype.toLower = function() {
 
 /* Converts first letter of a string to uppercase */
 String.prototype.ucFirst = function() {
-  if(/[A-Z]/.test(this)) return 'First character already capitalized'
+  if(/^[A-Z]{1}.*/.test(this)) return this;
   return this.charAt(0).toUpper() + this.slice(1) //converts first letter to upper and joins it to the rest of the string characters
 }
 
@@ -50,15 +50,13 @@ String.prototype.words = function() {
 
 /* Counts all the words in a string */
 String.prototype.wordCount = function() {
-  return this.words().length // gets the number of words in string
+  return this.words() === null ? 0 : this.words().length // gets the number of words in string
 }
 
 
 /*Gets currency representation of a string*/
 String.prototype.toCurrency = function() {
-  let regEx = /\d(?=\d{3}\.)/g; //pattern to match digit immediately followed by 3 digits
-  let regSeperator = '$&,';
-  return this.replace(regEx, regSeperator) //replace matched result with specified seperator
+  return this.replace(/(\d)(?=(\d{3})+(\.\d{1,})?$)/g, '$&,');
 }
 
 
@@ -105,7 +103,7 @@ String.prototype.alternatingCase = function() {
 /* Converts numbers to its words equivalent */
 String.prototype.numberWords = function() {
   let result = [];
-  let regEx = /\d/g; //pattern to match all digits
+  let regEx = /^(\d+)$/g; //pattern to match all digits
   let splittedNumbers = this.split('');
   let possibleWords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
   if(this.match(regEx)) {
@@ -114,7 +112,7 @@ String.prototype.numberWords = function() {
     }
     return result.join(' ');
   } else {
-    return 'No match found'
+    return splittedNumbers.join('')
   }
 };
 
